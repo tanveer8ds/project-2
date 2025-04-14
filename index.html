@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient in css</title>
+    <style>
+        .box1{
+            border: 2px solid black;
+            width: 50%;
+            margin-left: 10px;
+            text-align: center;
+            background: radial-gradient(closest-side at 50% 50% ,  red, green, pink);
+            color: aqua;
+        }
+
+        .box2{
+            border: 2px solid black;
+            width: 50%;
+            margin-left: 10px;
+            margin-top: 20px;
+            text-align: center;
+            background: radial-gradient(closest-corner at 50% 50% ,  red, green, rgb(57, 54, 248));
+            color: aqua;
+        }
+
+        .box3{
+            border: 2px solid black;
+            width: 50%;
+            margin-left: 10px;
+            margin-top: 20px;
+            text-align: center;
+            background: radial-gradient(farthest-side at 50% 50% ,  red, green, rgb(57, 54, 248));
+            color: aqua;
+        }
+
+        .box4{
+            border: 2px solid black;
+            width: 50%;
+            margin-left: 10px;
+            margin-top: 20px;
+            text-align: center;
+            background: linear-gradient(to left , red, green, rgb(57, 54, 248));
+            color: aqua;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h1>Tanveer Ahmed</h1>
+    </div>
+
+    <div class="box2">
+        <h1>Tanveer Ahmed</h1>
+    </div> 
+
+    <div class="box3">
+        <h1>Tanveer Ahmed</h1>
+    </div> 
+
+    <div class="box4">
+        <h1>Tanveer Ahmed</h1>
+    </div> 
+    
+</body>
+</html>

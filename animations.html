@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations in css</title>
+    <style>
+
+        .boxes{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 70px;
+        }
+
+        .main1{
+
+            width: 15%;
+            height: 30%;
+            text-align: center;
+           box-shadow: 0 0 15px rgba(0 , 0 , 0 , 0.6) ;
+           color: #03446a;
+            
+        }
+
+        .main2{
+            border: 2px solid black;
+            width: 15%;
+            height: 30%;
+            text-align: center;
+            color: #f7fafc;
+            background: linear-gradient(to left , red , green , yellow , blue);
+        }
+
+        .main3{
+            width: 15%;
+            height: 70%;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0 , 0 , 0 , 0.6) ;
+            color: #03446a;
+            animation-name: sample;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes sample{
+            0% { background-image: url(./1.jpg); background-repeat: no-repeat;}
+            25% { background-image: url(./2.jpg); background-repeat: no-repeat;}
+            50% { background-image: url(./3.jpg); background-repeat: no-repeat;}
+            75% { background-image: url(./4.jpg); background-repeat: no-repeat;}
+            100% {background-image: url(./5.jpg); background-repeat: no-repeat;}
+        }
+    </style>
+<body>
+
+    <div class="boxes">
+        <div class="main1">
+            <h1>Tanveer</h1>
+        </div>
+        <div class="main2">
+            <h1>Tanveer</h1>
+        </div>
+        <div class="main3">
+            <h1></h1>
+            <br>
+            <h1></h1>
+            <br>
+            <h1></h1>
+            <br>
+            <h1></h1>
+            <br>
+            <h1></h1>
+        </div>
+    </div>
+    <br>
+    <div class="boxes">
+        <div class="main1">
+            <h1>Tanveer</h1>
+        </div>
+        <div class="main2">
+            <h1>Tanveer</h1>
+        </div>
+        <div class="main3">
+            <h1></h1>
+            <br>
+            <h1></h1>
+            <br>
+            <h1></h1>
+            <br>
+            <h1></h1>
+            <br>
+            <h1></h1>
+        </div>
+    </div>
+
+</body>
+</html>
